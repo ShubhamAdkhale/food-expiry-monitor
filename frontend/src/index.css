@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --g900: #1a3a24;
+  --g800: #1f4a2c;
+  --g700: #276237;
+  --g600: #2d7a42;
+  --g500: #3a9453;
+  --g400: #4db368;
+  --g300: #7dcf93;
+  --g200: #b8e8c4;
+  --g100: #ddf2e4;
+  --g50:  #f0faf3;
+
+  --amber: #d97706;
+  --amber-bg: #fffbeb;
+  --amber-border: #fde68a;
+
+  --red: #dc2626;
+  --red-bg: #fff5f5;
+  --red-border: #fecaca;
+
+  --text1: #111b14;
+  --text2: #2d4a35;
+  --text3: #5a7a62;
+  --text4: #93b09a;
+
+  --bg-page:  #f2f7f3;
+  --bg-card:  #ffffff;
+  --bg-input: #f8fbf8;
+
+  --border: #ddeae0;
+  --border-med: #c5daca;
+
+  --shadow-xs: 0 1px 2px rgba(26,58,36,0.05);
+  --shadow-sm: 0 2px 8px rgba(26,58,36,0.07), 0 1px 2px rgba(26,58,36,0.04);
+  --shadow-md: 0 6px 20px rgba(26,58,36,0.1), 0 2px 6px rgba(26,58,36,0.05);
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 20px;
+
+  --font: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Fraunces', serif;
+
+  --ease: 0.17s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font);
+  background: var(--bg-page);
+  color: var(--text1);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+input, select, button, textarea { font-family: var(--font); }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--g200); border-radius: 99px; }
