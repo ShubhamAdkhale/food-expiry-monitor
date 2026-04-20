@@ -73,18 +73,17 @@ food-expiry-monitor/
 		public/
 		src/
 		package.json
-	backend/
-		functions/
-			auth/
-				register.js
-				login.js
-			items/
-				createItem.js
-				listItems.js
-			checkExpiry/
-				checkExpiry.js
-		infrastructure/
-			(templates / scripts / IaC)
+	lambda/                     
+	    registerUser/
+	      index.mjs
+	    loginUser/
+	      index.mjs
+	    addItem/
+	      index.mjs
+	    getItems/
+	      index.mjs
+	    checkExpiry/
+	      index.mjs
 	README.md
 ```
 
