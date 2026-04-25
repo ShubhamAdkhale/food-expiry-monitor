@@ -232,6 +232,23 @@
 }
 @media (max-width: 768px) {
   .dash-header-inner { padding: 1.25rem; flex-direction: column; align-items: flex-start; }
+  .dash-header-right { flex-wrap: wrap; }
   .dash-body { padding: 1.25rem; }
   .stat-row  { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 480px) {
+  .dash-header-inner { padding: 1rem; }
+  .dash-title { font-size: 1.65rem; }
+  .dash-subtitle { font-size: 0.84rem; }
+  .dash-body { padding: 1rem; }
+
+  .dash-header-right { width: 100%; gap: 0.5rem; }
+  .dash-logout-btn { width: 100%; }
+  .user-pill-name { display: none; }
+  .sns-chip { width: 100%; }
+
+  .stat-row { grid-template-columns: 1fr; }
+
+  .state-card { padding: 2.5rem 1.25rem; }
 }

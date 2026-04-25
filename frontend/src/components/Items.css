@@ -358,3 +358,53 @@
 .ic-bar-fresh         { background: var(--g400); }
 .ic-bar-expiring-soon { background: var(--amber); }
 .ic-bar-expired       { background: var(--red); opacity: 0.5; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .form-panel,
+  .inv-panel {
+    padding: 1.25rem 1.15rem;
+  }
+
+  .inv-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .inv-refresh-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .inv-empty { padding: 2.75rem 1.25rem; }
+}
+
+@media (max-width: 600px) {
+  .filter-pills {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .inv-controls {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .search-wrap { flex: 1 1 100%; }
+  .sort-wrap { flex: 1 1 100%; }
+  .sort-select { width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .qty-row {
+    grid-template-columns: 1fr;
+  }
+
+  .inv-empty { padding: 2.25rem 1rem; }
+
+  .item-card { padding: 0.95rem 1rem; }
+  .ic-top { gap: 0.6rem; }
+  .ic-icon-wrap {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}
