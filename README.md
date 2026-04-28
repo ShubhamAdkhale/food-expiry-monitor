@@ -10,6 +10,8 @@ Users can register, log in, and manage their own private inventory of food items
 
 This project follows a serverless, event-driven architecture:
 
+![AWS Serverless Architecture Diagram](frontend/Architecture_Diagram/Architecture_CCL.png)
+
 1. **User registers / logs in (Frontend → API Gateway → Lambda)**
 	 - Registration stores the user in DynamoDB.
 	 - A dedicated SNS topic is created per user for private notifications.
